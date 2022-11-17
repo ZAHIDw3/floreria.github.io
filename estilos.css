@@ -1,0 +1,214 @@
+/* color y margen de la pagina */
+body {
+    background-color: #FADBD8;
+    margin: 0;
+    padding: 0;
+}
+
+/* estilo de la barra de navegación */
+header{
+    display: flex;
+    min-height: 75px;
+    background-color: #a2c9d3;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* estilo del logo de la pagina y el nombre de la pagina */
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 23px;
+}
+
+/* tamaño del logo de la empresa */
+.logo-imagen{
+    height: 80px;
+    margin-right: 5px;
+}
+
+/* estilo de las estiquetas a */
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* stilo de las opciones de la barra de navegación alina y centra */
+.opciones{
+    display: flex;
+    align-items: center;
+}
+
+/* Aqui agrego espacio  */
+.categorias{
+    font-weight: 600;
+    padding-right: 50px;
+
+}
+
+/* pasa por encima el mause y se pone la letra en blenco  */
+.categorias:hover{
+    color: #b35151;
+}
+
+/* Tamao de la imagen del carrito */
+.carrito-imagen{
+    height: 45px;
+    margin-right: 5px;
+}
+
+/* agrego estilo atodo el main para que sea responsivo y margen  */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+}
+
+/* coloco el tamaño de la magen y el corde crcular */
+.articulo-img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+/* aqui es el tamaño de la tarjeta y el borde, como la dreccion y lo demas */
+.tarjeta{
+    width: 280px;
+    border: solid gray 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    margin: 40px;
+}
+
+/* agrego espacio de relleno y un margen al boton */
+.descripcion{
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+/* estilo para la letra del  nombre del articulo */
+.nombre-articulo{
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+/* estilo para la letra del precio delarticulo */
+.precio-articulo{
+    font-weight: 600;
+    font-family: Open Sans,sans-serif;
+    font-size: 20px;
+}
+
+/* color y tamaño del boton agregar */
+.boton{
+    text-decoration: none;
+    color: white;
+    background: #b35151;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+/* cambiar de color el boton cuando pase el mause */
+.boton:hover{
+    background: green;
+}
+
+/* estlo al pe de pagina*/
+footer{
+    display: flex;
+    min-height: 75px;
+    background-color: #a2c9d3;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* cambio el tipo de letra y el tamaño donde se encuentra la marca*/
+.marca{
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+
+/* tamaño de las imagenes de las redes*/
+.redes-sociales{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* estlo a los derechos de autor */
+.copyright{
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
+    color: white;
+    background: #317485;
+}
+
+/* estilo de las celdas de comentarios y contactos */
+input, textarea{
+    font-family: Open Sans,sans-serif;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+/* le especificamos que en donde colocamos el comentario tenga tamaño en especifico */
+textarea{
+    min-height: 70px;
+    max-height: 500px;
+    min-width: 80%;
+    max-width: 80%;
+}
+
+/* colocamos el estilo para el boton de enviar */
+.boton-enviar{
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background: #b35151;
+    padding: 10px;
+    width: 15%;
+}
+
+/* cuando este el mause arriba del boton cambie de color */
+.boton-enviar:hover{
+    cursor: pointer;
+    background: green;
+}
+
+/* estilo para el contenido de la tabla */
+table{
+    text-align: center;
+    background: white;
+}
+
+/* Cuando la pantalla llegue a 700px se va acomodar navegador en columnas y el pie de pagina  */
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+
+    .categorias{
+        padding: 20px 0px;
+        padding-right: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
